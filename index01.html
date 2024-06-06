@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvore DOM</title>
+    <style>
+        body {
+            background: rgb(98, 64, 248);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        let p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito assim: ${p1.innerText}`)
+        p1.style.color = 'black'
+        let corpo = window.document.body
+        //corpo.style.background = 'grey'
+        let d = window.document.getElementById('msg')
+        d.innerText = 'Mudando valores'
+    </script>
+</body>
+</html>
