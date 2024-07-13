@@ -1,5 +1,8 @@
-let x = 5;
-let y = 2;
-x = x + y;
+let x = 2;
+function fun() {
+    let x = 8;
+    console.log(x);
+}
 
 console.log(x);
+fun();

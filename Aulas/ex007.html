@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Onde você mora</h1>
+    <p>
+        <label for="txtcidade"><strong>CIDADE: </strong></label>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Analisar" onclick="analisar()">
+    </p>
+
+    <div id="nasc">
+        <strong>NACIONALIDADE</strong>
+    </div>
+
+    <script>
+        function analisar() {
+            var pais = document.getElementById('txtpais')
+            var nac = document.getElementById('nasc')
+            var p = pais.value
+            if(p == 'Angola') {
+                nac.innerText = 'Você é Angolano!'
+            } else {
+                nac.innerText = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
