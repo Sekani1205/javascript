@@ -8,22 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Contador</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            <p>Início <input type="number" name="inicio" id="txti"></p>
-            <p>Fim <input type="number" name="fim" id="txtf"></p>
-            <p>Passo <input type="number" name="Passo" id="txtp"></p>
-            <p><input type="button" value="Contar" onclick="contar()"></p>
+           <p>Número <input type="number" name="numero" id="txtn"> <input type="button" value="Gerar tabuada" onclick="tabuada()"></p>
         </div>
         <div id="result">
-            Preparando a contagem...
+            <select name="res" id="txtr"></select>
         </div>
     </section>
     <footer>
         <p>&copy; CursoemVideo</p>
     </footer>
-    <script src="contador.js"></script>
+    <script src="tabuada.js"></script>
 </body>
 </html>
