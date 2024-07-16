@@ -1,8 +1,7 @@
-let x = 2;
-function fun() {
-    let x = 8;
-    console.log(x);
+function fun(x) {
+    let y = 2
+    let prod = x * y
+    console.log(prod)
 }
 
-console.log(x);
-fun();
+fun(5)
